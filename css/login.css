@@ -1,0 +1,116 @@
+body{
+	padding:0px;
+	margin: 0px;
+	font-family: PingFangSC-Regular!important;
+}
+a{
+	text-decoration:none!important;
+}
+#web-content{
+	width: 100%;
+	min-width: 1440px;
+	margin: 0 auto;
+	background: url(../png/bg_frist_page.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#title{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 40px;
+	background: rgba(127,74,136,0.29);
+	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+	margin-bottom: 165px;
+}
+#content-border{
+	width: 567px;
+	height: 433px;
+	background: rgba(255,255,255,0.1);
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-bottom: 297px;
+	padding: 0 77px;
+	padding-top: 53px;
+}
+#content-border .content-title{
+	margin-bottom: 38px;
+	text-align: center;
+}
+#content-border .content-title div{
+	width: 90px;
+	font-size: 22px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	display: inline-block;
+}
+.title-check{
+	border-bottom: 3px solid rgba(127,74,136,1);
+	color: rgba(127,74,136,1)!important;
+}
+input{
+	width: 410px;
+	height: 42px;
+	background-color:rgba(0,0,0,0);
+	border: 1px solid rgba(255,255,255,0.1);
+	border-radius: 5px;
+	text-indent: 15px;
+	font-family: ArialMT;
+	font-size: 14px;
+	color: rgba(255,255,255,0.8);
+}
+input:focus{
+	outline: none;  
+    border-color: rgba(127,74,136,1);  
+    box-shadow: none;  
+    border-radius: 5px;
+}
+.login-pwd{
+	margin-top: 16px;
+}
+.forget{
+	margin-top:12px;
+	margin-bottom: 17px;
+	height: 18px;
+}
+.forget a{
+	float: right;
+	font-size: 13px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+.login{
+	width: 410px;
+	height: 42px;
+	background: rgba(34,38,41,0.7);
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0; 
+	margin-bottom: 23px;
+}
+.login:hover{
+	color: #fff;
+}
+.login:focus{
+	outline: none;
+	color: #fff;
+}
+.backregister{
+	text-align: center;
+	margin-bottom: 71px;
+}
+.backregister a{
+	font-size: 13px;
+	color: #FFF!important;
+	letter-spacing: 0;
+}
+#footer{
+	width: 100%;
+	height: 66px;
+	line-height: 66px;
+	border-top: 1px solid #fff;
+	font-size: 13px;
+	text-align: center;
+	color: #fff;
+}

@@ -1,0 +1,118 @@
+body{
+	padding:0px;
+	margin: 0px;
+	font-family: PingFangSC-Regular!important;
+}
+a{
+	text-decoration:none!important;
+}
+#web-content{
+	width: 100%;
+	min-width: 1440px;
+	margin: 0 auto;
+	background: #fff;
+}
+#title{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 40px;
+	background: rgb(127,74,136);
+	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+	margin-bottom: 165px;
+}
+#option-title{
+	width: 671px;
+	height: 52px;
+	line-height: 52px;
+	margin: 0 auto;
+	border-bottom: 1px solid rgba(127,74,136,0.7);
+	font-size: 16px;
+	font-weight: bold;
+	color: #222629;
+	letter-spacing: 0;
+	margin-bottom: 28px;
+}
+#option-title span{
+	font-size: 14px;
+	color: #222629;
+	letter-spacing: 0;
+}
+#content-border{
+	width: 567px;
+	height: 342px;
+	background: #FFFFFF;
+	border: 1px solid #F3EEF4;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.05);
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-bottom: 297px;
+	padding: 0 77px;
+	padding-top: 53px;
+}
+#content-border .content-title{
+	text-align: center;
+	margin-bottom: 38px;
+}
+#content-border .content-title div{
+	font-size: 22px;
+	font-weight: bold;
+	color: #7F4A88;
+	letter-spacing: 0;
+	display: inline-block;
+}
+input{
+	width: 410px;
+	height: 42px;
+	background-color:rgba(0,0,0,0);
+	border: 1px solid rgba(34,38,41,0.1);
+	border-radius: 5px;
+	margin-bottom: 17px;
+	text-indent: 15px;
+	font-family: ArialMT;
+	font-size: 14px;
+	color: rgba(0,0,0,0.8);
+}
+input:focus{
+	outline: none;  
+    border-color: rgba(127,74,136,1);  
+    box-shadow: none;  
+    border-radius: 5px;
+}
+
+.yzimg .user-yzimg{
+	width: 289px;
+	height: 42px;
+}
+.yzimg .img{
+	width: 103px;
+	height: 42px;
+	background: #7F4A88;
+	float: right;
+}
+
+.next{
+	width: 410px;
+	height: 42px;
+	background: rgba(34,38,41,0.7);
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0; 
+	margin-bottom: 23px;
+}
+.next:hover{
+	color: #fff;
+}
+.next:focus{
+	outline: none;
+	color: #fff;
+}
+#footer{
+	width: 100%;
+	height: 66px;
+	line-height: 66px;
+	border-top: 1px solid #7F4A88;
+	font-size: 13px;
+	text-align: center;
+	color: #000;
+}

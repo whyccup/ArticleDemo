@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户设置</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/useroption.css">
+</head>
+<body>
+	<div id="web-content">
+		<div id="toTop" class="toTop" title="回到顶部"></div>
+		<div id="title">
+			<img src="./png/logo_project.png">
+			<div class="title-right">
+				<ul>
+					<li><img src="#"></li>
+					<li><span>劳务</span></li>
+					<li class="pull_up"> &#12288;
+						<div class="user-option">
+							<a href="./usercenter.html"><img src="./png/my_center.png" class="my_center"></a>
+							<a href="./useroption.html"><img src="./png/my_setting.png" class="my_setting"></a>
+							<a href="./login.html"><img src="./png/my_out.png" class="my_out"></a>
+						</div>
+					</li>
+					<li>
+						<a href="./pusharticle.html"><img src="./png/write.png" class="write"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="content">
+			<div class="content-title">账户设置</div>
+			<div class="useroption">
+				<div class="head">
+					<span>头像：</span>
+					<div>上传头像<img src="#"></div>
+				</div>
+				<div class="petname"><span>昵称：</span><input type="text"></div>
+				<span>性别：</span>
+				<div class="sex">
+					<input type="radio" id="men" name="sex">
+					<label for="men">男</label>
+				</div>
+				<div class="sex">
+					<input type="radio" id="women" name="sex" checked="checked">
+					<label for="women">女</label>
+				</div>
+				<div class="love">
+					<span>爱好：</span>
+					<div class="like">
+						<input type="checkbox" name="like" id="like1">
+						<label for="like1">游泳</label>
+					</div>
+					<div class="like">
+						<input type="checkbox" name="like" id="like2">
+						<label for="like2">下棋</label>
+					</div>
+					<div class="like">
+						<input type="checkbox" name="like" id="like3">
+						<label for="like3">健身</label>
+					</div>
+				</div>
+				<div class="star">
+					<span>星座：</span>
+					<select>
+						<option value="-1">请选择</option>
+						<option value="1">白羊座</option>
+						<option value="2">金牛座</option>
+						<option value="3">双子座</option>
+						<option value="4">巨蟹座</option>
+						<option value="5">狮子座</option>
+						<option value="6">处女座</option>
+						<option value="7">天秤座</option>
+						<option value="8">天蝎座</option>
+						<option value="9">射手座</option>
+						<option value="10">摩羯座</option>
+						<option value="11">水瓶座</option>
+						<option value="12">双鱼座</option>
+					</select>
+				</div>
+				<div class="city">
+					<span>城市：</span>
+					<select class="sheng"></select>
+					<select class="shi"></select>
+				</div>
+				<div class="pwd">
+					<span>密码：</span>
+					<input type="text">
+				</div>
+				<div class="save">
+					<a href="./usercenter.html"><button type="button" class="btn">保存</button></a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div id="footer">Copyright © 2015-2016 jiefuzi.com All Rights Reserved | 陕ICP备 13044542号-2</div>
+	</div>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script src="./js/useroption.js"></script>
+</body>
+</html>

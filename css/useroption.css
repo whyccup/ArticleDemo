@@ -319,6 +319,7 @@ a{
 	background: #FFFFFF;
 	border: 1px solid rgba(34,38,41,0.2);
 	border-radius: 4px;
+	text-indent: 10px;
 }
 
 
@@ -335,6 +336,7 @@ a{
 	border: 1px solid rgba(34,38,41,0.2);
 	border-radius: 4px; 
 	margin-right: 40px;
+	text-indent: 10px;
 }
 
 

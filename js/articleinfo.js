@@ -2,7 +2,7 @@ $(document).ready(function() {
 //title变成用户
 	if (localStorage.length != 0) {
 		var strHtml = [];
-		strHtml.push('<li class="userheaderimg"><img src="'+localStorage.background+'"></li>');
+		strHtml.push('<li class="userheaderimg" style="margin-right:10px;"><img src="'+localStorage.background+'"></li>');
 		strHtml.push('<li><span>'+localStorage.name+'</span></li>');
 		strHtml.push('<li class="pull_up">');
 		strHtml.push('<img src="./png/pull_down.png">');

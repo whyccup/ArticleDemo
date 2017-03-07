@@ -27,9 +27,14 @@ function login(){
 			localStorage.constellation = data.data.user.constellation;
 			localStorage.gender = data.data.user.gender;
 			localStorage.name = data.data.user.name;
-			localStorage.token = data.data.user.token; 			
-			alert('登陆成功！');
-			window.location.href="./article.html"
+			localStorage.token = data.data.user.token; 
+			if (localStorage.gender == undefined) {
+				alert('登陆成功！新人要先去设置自己的详细信息哦');
+				window.location.href="./useroption.html"
+			}else {
+					alert('登陆成功！');
+				window.location.href="./article.html"
+			}
 		}else {
 			alert('你的账户或密码有误！');
 		}

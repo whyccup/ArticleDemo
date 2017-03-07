@@ -26,13 +26,13 @@ a{
 }
 #content-border{
 	width: 567px;
-	height: 433px;
 	background: rgba(255,255,255,0.1);
 	border-radius: 15px;
 	margin: 0 auto;
 	margin-bottom: 297px;
 	padding: 0 77px;
 	padding-top: 53px;
+	padding-bottom: 71px;
 }
 #content-border .content-title{
 	margin-bottom: 38px;
@@ -66,9 +66,25 @@ input:focus{
     box-shadow: none;  
     border-radius: 5px;
 }
-.login-pwd{
-	margin-top: 16px;
+
+.form-group {
+    margin-bottom: 28px;
+    position: relative;
 }
+.byccup{
+	position: absolute;
+
+}
+.byccup,.byccup ul,.byccup ul li{
+	margin: 0;	
+	
+}
+.byccup ul li{
+	padding-top: 2px;
+	color: #FF0000;
+}
+
+
 .forget{
 	margin-top:12px;
 	margin-bottom: 17px;
@@ -98,7 +114,6 @@ input:focus{
 }
 .backregister{
 	text-align: center;
-	margin-bottom: 71px;
 }
 .backregister a{
 	font-size: 13px;

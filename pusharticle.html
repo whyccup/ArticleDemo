@@ -10,35 +10,30 @@
 	<div id="web-content">
 		<div id="toTop" class="toTop" title="回到顶部"></div>
 		<div id="title">
-			<img src="./png/logo_project.png">
+			<a href="./article.html"><img src="./png/logo_project.png"></a>
 			<div class="title-right">
 				<ul>
-					<li><img src="#"></li>
-					<li><span>劳务</span></li>
-					<li class="pull_up"> &#12288;
-						<div class="user-option">
-							<a href="./usercenter.html"><img src="./png/my_center.png" class="my_center"></a>
-							<a href="./useroption.html"><img src="./png/my_setting.png" class="my_setting"></a>
-							<a href="./login.html"><img src="./png/my_out.png" class="my_out"></a>
-						</div>
-					</li>
-					<li>
-						<a href="./pusharticle.html"><img src="./png/write.png" class="write"></a>
-					</li>
+					<li class="noLS"><a href="./login.html">登录</a></li><li class="noLS"><a href="./register.html">注册</a></li><li><a href="./pusharticle.html"><img src="./png/write.png" class="write"></a></li>
 				</ul>
 			</div>
 		</div>
 			
 		<div id="content">
 			<div class="push-img">
-				<img src="#" class="article-img">
 				<img src="./png/camera.png">
-				<div>请上传封面，支持3MB以内的JPG\PNG图片。</div>
+				<div class="form">
+					<a href="javascript:;" id="forma">请上传封面，支持3MB以内的JPG\PNG图片。<input type="file" name="file" id="file"></a>
+				</div>
 			</div>
 				<input type="text" class="push-title" placeholder="请输入标题">
 				<textarea class="push-content" placeholder="请输入正文"></textarea>
+			<div id="save">
+				<button type="button" class="btn btn-danger btn-block">发表文章</button>
+			</div>
 		</div>
 
+
+		
 
 
 

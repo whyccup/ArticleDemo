@@ -16,13 +16,19 @@ a{
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 400px;
-  bottom: 155px;
+  right: 100px;
+  bottom: 100px;
   background: url(../png/back_top.png) no-repeat;
   cursor: pointer;
   display: block;
   z-index: 2;
 }
+
+/*图标向上旋转*/
+.hover-up{transition-duration:.5s;transform:rotate(180deg); }
+/*图标向下旋转*/
+.hover-down{transition-duration:.5s;transform:rotate(0);}
+
 #title{
 	width: 100%;
 	height: 60px;
@@ -31,37 +37,51 @@ a{
 	padding-right: 40px;
 	background: rgba(127,74,136,1);
 	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+	margin-bottom: 45px;
 	z-index: 10;
-	margin-bottom: 58px;
 }
 .title-right{
-	position: relative;
 	float: right;
-	z-index: 9999;
+}
+.title-right ul {
+	margin: 0px;
+	list-style:none;
 }
 .title-right ul li{
-	display: inline-block;
+	float: left;
+}
+.userheaderimg{
+	vertical-align: middle;
+}
+.userheaderimg img{
+	width: 36px;
+	height: 36px;
+	border-radius: 45px;
+}
+.noLS a{
+	font-size: 14px;
+	color: #fff;
+	margin: 0 15px;
+}
+.title-right li img{
+	position: relative;
+	bottom: 2px;
 }
 .title-right span{
 	font-size: 16px;
 	color: #FFFFFF;
-	letter-spacing: 0;
 	margin-left: 8px;
 }
 .pull_up{
 	position: relative;
 	display: inline-block;
 	margin-left: 7px;
-	background: url(../png/pull_up.png);
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
 	width: 40px;
 }
 .pull_up .user-option{
 	position: absolute;
 	display: none;
-	top: 0px;
+	top: 9px;
 	left: -68px;
 	width: 121px;
 	height: 196px;
@@ -131,27 +151,50 @@ a{
 
 .head{
 	height: 50px;
-	line-height: 50px;
 	margin-bottom: 18px;
-}
-.head div{
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-	background: #c05656;
-	border-radius:50%;
-	font-size: 10px;
-	color: #FFFFFF;
-	letter-spacing: 0;
 	position: relative;
 }
-.head div img{
+.head span{
+	line-height: 50px;
+}
+.head .form{
+	display: inline-block;
+}
+
+.head .form input{
+	display: inline-block;
+}
+
+.head .form a {
+    width: 50px;
+	height: 50px;
+	border-radius:50%;
+	display: inline-block;
+	background: #c05656;
+	line-height: 50px;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	border: 0;
+	padding: 0;
+}
+
+.head .form a input {
+	width: 54px;
+	height: 70px;
+	border-radius:50%;
+    position: absolute;
+    left: 66px;
+    top: -19px;
+    opacity: 0;
+    line-height: 1px;
+}
+
+.head img{
 	width: 50px;
 	height: 50px;
-	position: absolute;
-	top:0px;
-	left: 0px;
-	z-index: -1;
+	border-radius:50%;
 }
 
 
@@ -301,22 +344,22 @@ a{
 	line-height: 36px;
 	margin-bottom: 18px;
 }
-.pwd input{
-	width: 220px;
+.pwd button{
 	height: 36px;
-	border: 1px solid rgba(34,38,41,0.2);
-	border-radius: 4px;
-	text-indent: 15px;
+	background: #c05656;
 }
+.pwd button:hover + span{
+	display: inline-block!important;
+}
+
 .save {
 	clear: both;
 	margin-top: 60px;
 	text-align: right;
 }
 .save button{
-	background: #c05656;
-	color: #fff;
 	margin-right: 50px;
+	background: #c05656;
 }
 
 

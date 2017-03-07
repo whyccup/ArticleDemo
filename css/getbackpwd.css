@@ -64,14 +64,15 @@ input:focus{
 }
 
 .yzimg .user-yzimg{
-	width: 289px;
+	width: 239px;
 	height: 42px;
 }
 .yzimg .img{
-	width: 103px;
-	height: 42px;
-	background: #7F4A88;
 	float: right;
+}
+.yzimg .img svg{
+	position: relative;
+	bottom: 8px;
 }
 
 .next{

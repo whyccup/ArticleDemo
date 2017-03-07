@@ -26,13 +26,13 @@ a{
 }
 #content-border{
 	width: 567px;
-	height: 510px;
 	background: rgba(255,255,255,0.1);
 	border-radius: 15px;
 	margin: 0 auto;
 	margin-bottom: 297px;
 	padding: 0 77px;
 	padding-top: 53px;
+	padding-bottom: 71px;
 }
 #content-border .content-title{
 	text-align: center;
@@ -55,7 +55,6 @@ input{
 	background-color:rgba(0,0,0,0);
 	border: 1px solid rgba(255,255,255,0.1);
 	border-radius: 5px;
-	margin-bottom: 17px;
 	text-indent: 15px;
 	font-family: ArialMT;
 	font-size: 14px;
@@ -63,9 +62,25 @@ input{
 }
 input:focus{
 	outline: none;  
-    border-color: rgba(127,74,136,1);  
     box-shadow: none;  
     border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 28px;
+    position: relative;
+}
+.byccup{
+	position: absolute;
+
+}
+.byccup,.byccup ul,.byccup ul li{
+	margin: 0;	
+	
+}
+.byccup ul li{
+	padding-top: 2px;
+	color: #FF0000;
 }
 
 .yznote .register-message{
@@ -104,7 +119,6 @@ input:focus{
 }
 .backlogin{
 	text-align: center;
-	margin-bottom: 71px;
 }
 .backlogin a{
 	font-size: 13px;

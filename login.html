@@ -16,15 +16,27 @@
 				<a><div class="title-check">登录</div></a>
 				<a href="./register.html"><div style="margin-left: 18px;">注册</div></a>
 			</div>
-			<input class="login-name" type="text" placeholder="请输入手机号码">
-			<input class="login-pwd" type="password" placeholder="请输入6~32位密码">
-			<div class="forget"><a href="./getbackpwd.html">忘记密码?</a></div>
-			<button class="btn btn-block login" type="button">登&#12288;&#12288;&#12288;录</button>
+			<form data-toggle="validator" role="form" onsubmit="return false">
+				<div class="form-group">
+					<input class="login-name" type="text" placeholder="请输入手机号码" ondragstart="return false" oncontextmenu="return false" required minlength="11" maxlength="11" pattern="^[0-9]*$" data-error="请输入11位正确的手机号码">
+					<div class="help-block with-errors byccup"></div>
+				</div>
+				<div class="form-group">
+					<input class="login-pwd" type="password" placeholder="请输入6~32位密码"  ondragstart="return false" oncontextmenu="return false" required minlength="6" maxlength="32" pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,32}$" data-error="请输入6~32位必须包含数字和字母的密码">
+					<div class="help-block with-errors byccup"></div>
+				</div>
+				<div class="forget"><a href="./getbackpwd.html">忘记密码?</a></div>
+				<div class="form-group">
+					<button class="btn btn-block login" type="submit">登&#12288;&#12288;&#12288;录</button>
+				</div>
+
+			</form>
 			<div class="backregister"><a href="./register.html">还没有账户，马上注册</a></div>
 		</div>
 		<div id="footer">Copyright © 2015-2016 jiefuzi.com All Rights Reserved | 陕ICP备 13044542号-2</div>
 	</div>
 	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 	<script src="./js/login.js"></script>
 </body>
 </html>

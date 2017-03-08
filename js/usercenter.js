@@ -58,6 +58,12 @@ if (localStorage.length != 0) {
 
 
 //填充个人中心页面
+$("#user-title").css({
+	"background":"url("+localStorage.center+")",
+	"background-repeat": "no-repeat",
+	"background-size": "cover",
+	"background-position": "50% 50%"
+});
 $(".userimg").attr('src',localStorage.background);
 $(".username").text(localStorage.name);
 $(".userctiy").text(localStorage.city);

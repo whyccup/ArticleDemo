@@ -66,6 +66,12 @@ $(document).ready(function() {
 	comment();
 
 
+//生成二维码
+$("#qrcode").qrcode({ 
+	width: 130, //宽度 
+	height:130, //高度 
+	text: "http://192.168.1.52/Project/wenzhang/article.html" //任意内容 
+});
 	
 });// ready在这停顿
 

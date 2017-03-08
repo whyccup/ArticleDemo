@@ -164,7 +164,7 @@ function profile(gender){
 	formData.append('avatar', $('#file')[0].files[0]);
 	formData.append('name',$(".petname").find('input').val());
 	formData.append('gender',gender);
-	formData.append('city',$(".sheng option:selected").text()+' '+$(".shi option:selected").text());
+	formData.append('city',$(".shi option:selected").text());
 	formData.append('constellation',$(".star").find('select option:selected').text());
 	$.ajax({
 		url: 'http://192.168.1.8:8700/rygmkKMb9x/v1/account/profile',

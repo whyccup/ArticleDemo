@@ -225,8 +225,8 @@ a{
 	margin-bottom: 31px;
 }
 #article-info img{
-	width: 906px;
-	height: 375px;
+	width: 100%;
+	height: 100%;
 	margin-bottom: 40px;
 }
 #article-info p{

@@ -53,18 +53,20 @@ if (localStorage.length != 0) {
 	$(".title-right").find("ul").html(strHtml.join(""));
 }
 
-	article();
+	article(page);
 });// ready在这停顿
-// 
-// 
+
+var page = 1;
+
+
 // 文章列表接口
-function article(){
+function article(page){
 	$.ajax({
 		url: 'http://192.168.1.8:8700/rygmkKMb9x/v1/query/article',
 		type: 'GET',
 		dataType: 'json',
 		data: {
-			page:0,
+			page:page,
 			limit:10
 		},
 	})
@@ -123,3 +125,23 @@ function article(){
 }
 
 
+//把加一page包装起来
+function articleNext(){
+	//页数增加
+	page = page + 1;
+	//调用接口
+	article(page);
+}
+
+
+$(window).scroll(function () {
+	var scrollTop = Math.floor($(this).scrollTop());
+	var scrollHeight = $(document).height();
+	var windowHeight = $(this).height();
+	setTimeout(function(){
+		if (scrollTop + windowHeight == scrollHeight) {
+		//此处是滚动条到底部时候触发的事件，在这里写要加载的数据，或者是拉动滚动条的操作
+		articleNext();
+		}
+	},1000);
+});

@@ -60,9 +60,10 @@ a{
 	float: left;
 }
 .userheaderimg{
-	vertical-align: middle;
+	height: 60px;
+	padding: 12px 0;
 }
-.userheaderimg img{
+.userheaderimg div{
 	width: 36px;
 	height: 36px;
 	border-radius: 45px;
@@ -163,6 +164,12 @@ a{
 	display: inline-block;
 }
 .writer img{
+	width: 36px;
+    height: 36px;
+    border-radius: 45px; 
+	margin-right: 11px;
+}
+.writer .img{
 	width: 36px;
     height: 36px;
     border-radius: 45px; 

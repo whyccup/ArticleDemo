@@ -33,7 +33,7 @@ $(document).ready(function() {
 //title变成用户
 if (localStorage.length != 0) {
 	var strHtml = [];
-	strHtml.push('<li class="userheaderimg" style="margin-right:10px;"><img src="'+localStorage.background+'"></li>');
+	strHtml.push('<li class="userheaderimg" style="margin-right:10px;"><div style="background:url('+localStorage.background+');background-repeat: no-repeat;background-size: cover;background-position: 50% 50%;"></div></li>');
 	strHtml.push('<li><span>'+localStorage.name+'</span></li>');
 	strHtml.push('<li class="pull_up">');
 	strHtml.push('<img src="./png/pull_down.png">');
@@ -92,7 +92,7 @@ function article(page){
 			if (/http/.test(articles[i].user.avatar) == true){
 				strHtml.push('<img src="'+articles[i].user.avatar+'">');
 			}else {
-				strHtml.push('<img src="http://192.168.1.8:8700/rygmkKMb9x/'+articles[i].user.avatar+'">');
+				strHtml.push('<div class="img" style="background:url(http://192.168.1.8:8700/rygmkKMb9x/'+articles[i].user.avatar+');background-repeat: no-repeat;background-size: cover;background-position: 50% 50%;"></div>');
 			}
 			strHtml.push('<span class="writer-name">'+articles[i].user.name+'</span>');
 			strHtml.push('</a>');
@@ -121,7 +121,6 @@ function article(page){
 		}
 		$("#content").append(strHtml.join(""));
 	});
-	
 }
 
 

@@ -33,8 +33,7 @@ $(document).ready(function() {
 //title变成用户
 if (localStorage.length != 0) {
 	var strHtml = [];
-	strHtml.push('<li class="userheaderimg" style="margin-right:10px;"><img src="'+localStorage.background+'"></li>');
-	strHtml.push('<li><span>'+localStorage.name+'</span></li>');
+	strHtml.push('<li class="userheaderimg" style="margin-right:10px;"><div style="background:url('+localStorage.background+');background-repeat: no-repeat;background-size: cover;background-position: 50% 50%;"></div></li>');	strHtml.push('<li><span>'+localStorage.name+'</span></li>');
 	strHtml.push('<li class="pull_up">');
 	strHtml.push('<img src="./png/pull_down.png">');
 	strHtml.push('<div class="user-option">');
@@ -61,7 +60,12 @@ if (localStorage.length != 0) {
 
 
 //填充个人中心页面
-$(".userimg").attr('src',localStorage.background);
+$(".userimg").css({
+		"background":"url("+localStorage.background+")",
+		"background-repeat": "no-repeat",
+		"background-size": "cover",
+		"background-position": "50% 50%"
+		});
 $(".username").text(localStorage.name);
 $(".userctiy").text(localStorage.city);
 $(".userstar").text(localStorage.constellation);
@@ -121,7 +125,7 @@ function myarticle(){
 			strHtml.push('</a>');
 			strHtml.push('<div class="writer">');
 			strHtml.push('<a href="./article.html?user_id='+articles[i].user._id+'&text_id='+articles[i]._id+'">');
-			strHtml.push('<img src="http://192.168.1.8:8700/rygmkKMb9x/'+articles[i].user.avatar+'">');
+			strHtml.push('<div class="img" style="background:url(http://192.168.1.8:8700/rygmkKMb9x/'+articles[i].user.avatar+');background-repeat: no-repeat;background-size: cover;background-position: 50% 50%;"></div>');
 			strHtml.push('<span class="writer-name">'+articles[i].user.name+'</span>');
 			strHtml.push('</a>');
 			strHtml.push('<span class="write-time">'+moment.unix(articles[i].create_time).format('hh:mm')+'</span>');

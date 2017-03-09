@@ -33,7 +33,7 @@ $(document).ready(function() {
 //title变成用户
 if (localStorage.length != 0) {
 	var strHtml = [];
-	strHtml.push('<li class="userheaderimg" style="margin-right:10px;"><img src="'+localStorage.background+'"></li>');
+	strHtml.push('<li class="userheaderimg" style="margin-right:10px;"><div style="background:url('+localStorage.background+');background-repeat: no-repeat;background-size: cover;background-position: 50% 50%;"></div></li>');
 	strHtml.push('<li><span>'+localStorage.name+'</span></li>');
 	strHtml.push('<li class="pull_up">');
 	strHtml.push('<img src="./png/pull_down.png">');
@@ -51,7 +51,8 @@ if (localStorage.length != 0) {
 	strHtml.push('</a>');
 	strHtml.push('<li><a href="./pusharticle.html"><img src="./png/write.png" class="write"></a></li>');
 	$(".title-right").find("ul").html(strHtml.join(""));
-}else {
+}
+else {
 	alert('请登录');
 	window.location.href="./login.html";
 }
@@ -91,9 +92,20 @@ if (localStorage.length != 0) {
 var headimg = '';
 
 
-// //选择了图片触发事件
-// //为了预览
-// $("#file").change(function(event) {});
+//上传图片后预览
+$("#file").change(function(event) {
+	var file = $('#file')[0].files[0];
+	var a = new FileReader();
+	a.onload = function(b){
+		$("#forma").css({
+		"background":"url("+b.target.result+")",
+		"background-repeat": "no-repeat",
+		"background-size": "cover",
+		"background-position": "50% 50%"
+		}).html('<input type="file" name="file" id="file">');
+	}
+	a.readAsDataURL(file);
+});
 
 
 //省接口

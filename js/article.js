@@ -77,7 +77,7 @@ function article(page){
 			strHtml.push('<div class="article-content">');
 			strHtml.push('<a href="./articleinfo.html?_id='+articles[i].user._id+'&text_id='+articles[i]._id+'">');
 			if (/http/.test(articles[i].cover) == true) {
-				strHtml.push('<img class="imgcontent" src="'+articles[i].cover+'">');
+				strHtml.push('<img class="imgcontent" src="'+articles[i].cover+'" onerror="this.src=\'./png/ab7b8352c7b752520c959448a2f96b8a.jpg\'">');
 			}else {
 				strHtml.push('<img class="imgcontent" src="http://192.168.1.8:8700/rygmkKMb9x/'+articles[i].cover+'">');
 			}

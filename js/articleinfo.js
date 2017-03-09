@@ -101,7 +101,7 @@ function article(){
 			$(".like").find('span').text(data.data.articles[i].praise_sum);
 			$(".watchnum").find('span').text(data.data.articles[i].preview_sum);
 			if (/http/.test(data.data.articles[i].cover) == true) {
-				$("#article-info").find('img').attr('src', data.data.articles[i].cover);
+				$("#article-info").find('img').attr('src', data.data.articles[i].cover).attr('onerror', 'this.src=\'./png/ab7b8352c7b752520c959448a2f96b8a.jpg\'');;
 			}else {
 				$("#article-info").find('img').attr('src', 'http://192.168.1.8:8700/rygmkKMb9x/'+data.data.articles[i].cover);
 			}

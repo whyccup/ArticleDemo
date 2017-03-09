@@ -57,13 +57,10 @@ if (localStorage.length != 0) {
 }
 
 
+
+
+
 //填充个人中心页面
-$("#user-title").css({
-	"background":"url("+localStorage.center+")",
-	"background-repeat": "no-repeat",
-	"background-size": "cover",
-	"background-position": "50% 50%"
-});
 $(".userimg").attr('src',localStorage.background);
 $(".username").text(localStorage.name);
 $(".userctiy").text(localStorage.city);
@@ -79,6 +76,18 @@ myarticle();
 
 
 });// ready在这停顿
+
+
+//背景图片静默加载后替换
+$('#loadimg').attr('src', localStorage.center).on('load', function(event) {
+
+	$("#user-title").css({
+	"background":"url("+localStorage.center+")",
+	"background-repeat": "no-repeat",
+	"background-size": "cover",
+	"background-position": "50% 50%"
+	});
+});
 
 
 

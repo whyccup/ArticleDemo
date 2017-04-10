@@ -134,7 +134,7 @@ function articleNext(){
 
 
 $(window).scroll(function () {
-	var scrollTop = Math.floor($(this).scrollTop());
+	var scrollTop = Math.floor($(this).scrollTop());//滚动条距离窗口顶部的距离
 	var scrollHeight = $(document).height();
 	var windowHeight = $(this).height();
 	setTimeout(function(){

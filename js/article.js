@@ -135,8 +135,8 @@ function articleNext(){
 
 $(window).scroll(function () {
 	var scrollTop = Math.floor($(this).scrollTop());//滚动条距离窗口顶部的距离
-	var scrollHeight = $(document).height();
-	var windowHeight = $(this).height();
+	var scrollHeight = $(document).height();//页面文档的高度
+	var windowHeight = $(this).height();//窗口显示区域的高度==滚动条的长度
 	setTimeout(function(){
 		if (scrollTop + windowHeight == scrollHeight) {
 		//此处是滚动条到底部时候触发的事件，在这里写要加载的数据，或者是拉动滚动条的操作
